@@ -5,6 +5,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+
 html{
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
@@ -30,6 +37,10 @@ a{
 .main-text{
     display: flex;
     justify-content: space-around;
+}
+
+.right-model{
+    width: 40%;
 }
 
 .model{
@@ -119,25 +130,36 @@ img{
     margin-right: 190px;
  }
 
- .animated1, .animated2, .animated3{
+ .animated{
     width: 270px;
-    height: 250px;
+    height: 270px;
     padding-top: 12rem;
     padding-left: 2rem;
-    border-style: solid;
-    transition-property: ;
+    border-radius: 10px;
+    background: white;
+    position: relative;
+    transition: all .3s ease-in-out;
+    border: 2px solid #f7f6f9;
+    box-shadow: 0px 0px 12px -5px rgba(0,0,0,0.18);
  }
+
+ .animated:hover{
+     background-color: #7562E0;
+     color: white;
+ }
+
+
 
  h4{
     color: #7562E0;
     font-size: 20px;
- }
+}
 
  .work_part{
     margin-top: 8rem;
     display: flex;
     flex-wrap: wrap;
- }
+}
 
 .worker{
     display: flex;
@@ -246,6 +268,7 @@ img{
     margin-left: 15rem;
     margin-right: 14rem; 
     margin-bottom: 6rem;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 0px 23px -5px;
 }
 
 .test-im1 img, .test-im2 img, .test-im3 img{
@@ -324,9 +347,16 @@ img{
     width: 30%;
     height: 60px;
     margin-top: 1rem;
+    padding: 20px 30px;
     border: 3px solid #7562E0;
     background-color: white;
     font-size: 20px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.button:hover, .button:focus{
+    box-shadow: 0 0 0 0 var(--black), inset 6em 3.5em 0 0 var(--black);
 }
 
 .input{
